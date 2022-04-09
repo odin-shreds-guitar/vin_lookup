@@ -1,0 +1,40 @@
+import React from "react";
+
+const CarsList = (props) => {
+
+	
+
+	return (
+		<>
+				<h2>Previously viewed VINs</h2>
+			<div className="row justify-content-center">
+					<table className="table table-hover table-borderless w-75">
+						<thead className=" table-light">
+							<tr >
+								<th  >VIN</th>
+								<th>Year</th>
+								<th>Make</th>
+								<th>Model</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody >
+						{ props.cars.map((car, index) => {
+							return (
+								<tr key={index}>
+									<td> {car.VIN} </td>
+									<td> {car.ModelYear} </td>
+									<td> {car.Make} </td>
+									<td> {car.Model} </td>
+									<td> Bring up - Remove</td>
+								</tr>
+							)
+						})}
+						</tbody>
+					</table>
+			</div>
+		</>
+	)
+}
+
+export default CarsList

@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.delete-btn{
+  background-color: indianred;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}  
+
+p {
+  background-color: rgb(243, 240, 240);
+  padding: 1em;
+  margin: 10px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.box {
+  width: 70%;
+}
+
+.button{
+  border-style: none;
+  width: 250px;  
+  height: 40px;
+  border-radius: 10px;
+  font-size: x-large;
+  margin: 15px;
+}
+
+h1{
+  padding: 30px;
+}
+
+h2{
+  padding: 20px
+}
+
+.car-detail-table{
+  table-layout: fixed;
+  width: 100%;
+  border: 1px solid rgb(101, 101, 101);
+}
+
+.table-row-label{
+  background-color: rgb(243, 240, 240);
+  max-width: 7%;
+  font-size: 6px;
+  border: 1px solid rgb(101, 101, 101);
+}
+
+.table-row-data{
+  max-width: 8%;
+  font-size: 6px;
+  border: 1px solid rgb(101, 101, 101);
+}
