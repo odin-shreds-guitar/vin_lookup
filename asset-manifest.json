@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vin_lookup/static/css/main.88351f9b.css",
+    "main.js": "/vin_lookup/static/js/main.4050b62d.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/vin_lookup/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/vin_lookup/index.html",
+    "main.88351f9b.css.map": "/vin_lookup/static/css/main.88351f9b.css.map",
+    "main.4050b62d.js.map": "/vin_lookup/static/js/main.4050b62d.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/vin_lookup/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88351f9b.css",
+    "static/js/main.4050b62d.js"
+  ]
+}
