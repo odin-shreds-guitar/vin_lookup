@@ -1,4 +1,3 @@
-import { useState } from "react";
 import React from "react";
 
 const CarsList = (props) => {
@@ -11,11 +10,6 @@ const CarsList = (props) => {
 		})
 
 		props.setCars(newCars)
-	}
-
-	// show car from state
-	const showCar = () => {
-		console.log("showing car")
 	}
 
 	return (
@@ -41,7 +35,7 @@ const CarsList = (props) => {
 								<td> {car.Make} </td>
 								<td> {car.Model} </td>
 								<td> 
-									<button type="button" className="btn btn-success" onClick={ showCar }>Show Car</button>
+									<button type="button" className="btn btn-success" onClick={ () => props.setActiveCar(car) }>Show Car</button>
 									<button type="button" className="btn btn-danger" onClick={() =>  deleteCar(car.VIN) }>Remove</button>
 								</td>
 							</tr>

@@ -7,7 +7,8 @@ import CarDetail from '../components/CarDetail';
 const Main = () => {
     const [cars, setCars] = useState([]);
     const [vin, setVin] = useState("");
-	const [errors, setErrors] = useState("")
+	const [errors, setErrors] = useState("");
+	const [activeCar, setActiveCar] = useState({});
 
 	// initial check to confirm the .gov api is up 
 	const checkVPIC = () => {
@@ -46,6 +47,7 @@ const Main = () => {
 				} else {
 					setCars([...cars, carDetail]);
 					setVin("");
+					setActiveCar(carDetail)
 				}
 			})
 			.catch( err => {
@@ -59,9 +61,9 @@ const Main = () => {
         <div>
 			<SearchVin onSubmitHandler={onSubmitHandler} setVin={setVin} vin={vin} errors={errors} cars={cars} setCars={setCars}/>
             <hr/>
-            <CarsList cars={cars} setCars={setCars}/>
+            <CarsList cars={cars} setCars={setCars} setActiveCar={setActiveCar}/>
 			<hr/>
-            <CarDetail cars={cars} setCars={setCars}/>
+            <CarDetail activeCar={activeCar}  />
         </div>
     )
 }
