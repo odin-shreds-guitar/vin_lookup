@@ -17,7 +17,7 @@ const SearchVin = (props) => {
 				{/* validation  */}
 				{
 					errors 
-						? <span style={{color: "red", padding: "30px"}}>The following error codes have been detected: {errors} Check the VIN modify it accordingly.</span>
+						? <span style={{color: "red", padding: "30px"}}>The following error codes have been detected: {errors} Check the VIN and modify it accordingly.</span>
 						: null
 				}
 
