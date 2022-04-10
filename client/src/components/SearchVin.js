@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const SearchVin = (props) => {
 	const { onSubmitHandler, setVin, vin, errors } = props;
@@ -17,7 +17,7 @@ const SearchVin = (props) => {
 				{/* validation  */}
 				{
 					errors 
-						? <span style={{color: "red", padding: "30px"}}>The following error codes have been detected: {errors}</span>
+						? <span style={{color: "red", padding: "30px"}}>The following error codes have been detected: {errors} Check the VIN modify it accordingly.</span>
 						: null
 				}
 

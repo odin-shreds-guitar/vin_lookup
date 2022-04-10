@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React, { useState, useEffect }from 'react';
 import axios from 'axios';
 import SearchVin from '../components/SearchVin';
 import CarsList from '../components/CarsList';
@@ -11,12 +11,13 @@ const Main = () => {
 
 	// initial check to confirm the .gov api is up 
 	const checkVPIC = () => {
+		console.log("Gov API is up")
 		axios.get('https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValuesExtended/12345678901234567/?format=json')
 			.then( response =>{
 				if (response.status != 200){
 					setErrors("There was a problem establishing connection to the API")
-				} 
-			}
+						} 
+					}
 			)
 			.catch(
 				err => {
@@ -25,13 +26,15 @@ const Main = () => {
 						setErrors(err.message);
 					} 
 				})
-	}
-	checkVPIC();
+			}
+	// useEffect to check on the status of the gov API once (hence the empty array)
+	useEffect(() => {
+			checkVPIC();
+		}, [])
 
 	// onSubmitHandler for the search 
 	const onSubmitHandler = (e) => {
 		e.preventDefault();
-		// const vin = "2hkrw6h30kh209140"
 		axios.get('https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValuesExtended/' + vin + '?format=json'
 			)
 			.then( response => {
@@ -54,8 +57,6 @@ const Main = () => {
 	}
     return (
         <div>
-            {/* trying to pass the setter and getter form line 7 here */}
-            {/* passed the getter and setter allowing ProhjectList to see it */}
 			<SearchVin onSubmitHandler={onSubmitHandler} setVin={setVin} vin={vin} errors={errors} cars={cars} setCars={setCars}/>
             <hr/>
             <CarsList cars={cars} setCars={setCars}/>

@@ -61,3 +61,11 @@ h2{
   font-size: 6px;
   border: 1px solid rgb(101, 101, 101);
 }
+
+.btn-danger{
+  margin-left: 3px;
+}
+
+#list-table td{
+  vertical-align:middle;
+}
