@@ -52,13 +52,11 @@ h2{
 .table-row-label{
   background-color: rgb(243, 240, 240);
   max-width: 7%;
-  font-size: 6px;
   border: 1px solid rgb(101, 101, 101);
 }
 
 .table-row-data{
   max-width: 8%;
-  font-size: 6px;
   border: 1px solid rgb(101, 101, 101);
 }
 
