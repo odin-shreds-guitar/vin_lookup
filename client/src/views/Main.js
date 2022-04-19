@@ -68,6 +68,7 @@ const Main = () => {
             <CarsList cars={cars} setCars={setCars} setActiveCar={setActiveCar}/>
 			<hr/>
             <CarDetail activeCar={activeCar}  />
+			<div style={{"padding":"20px"}}><a href="https://github.com/odin-shreds-guitar/vin_lookup" target="_blank" class="link-primary" style={{"text-decoration":"none", "margin-top":"20px"}}>Github</a></div>
         </div>
     )
 }

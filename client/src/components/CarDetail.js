@@ -208,7 +208,6 @@ const CarDetail = (props) => {
 					</tr>
 				</tbody>
 			</table>
-			<hr/>
 		</>
 		)
 	}
