@@ -79,3 +79,7 @@ h2{
   width: 10%;
   font-weight: bolder;
 }
+
+span a{
+  text-decoration: none;
+}
