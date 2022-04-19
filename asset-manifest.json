@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vin_lookup/static/css/main.3e6b3985.css",
-    "main.js": "/vin_lookup/static/js/main.a80ce553.js",
+    "main.css": "/vin_lookup/static/css/main.51c423a5.css",
+    "main.js": "/vin_lookup/static/js/main.948d0164.js",
     "static/js/787.c4e7f8f9.chunk.js": "/vin_lookup/static/js/787.c4e7f8f9.chunk.js",
     "index.html": "/vin_lookup/index.html",
-    "main.3e6b3985.css.map": "/vin_lookup/static/css/main.3e6b3985.css.map",
-    "main.a80ce553.js.map": "/vin_lookup/static/js/main.a80ce553.js.map",
+    "main.51c423a5.css.map": "/vin_lookup/static/css/main.51c423a5.css.map",
+    "main.948d0164.js.map": "/vin_lookup/static/js/main.948d0164.js.map",
     "787.c4e7f8f9.chunk.js.map": "/vin_lookup/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e6b3985.css",
-    "static/js/main.a80ce553.js"
+    "static/css/main.51c423a5.css",
+    "static/js/main.948d0164.js"
   ]
 }
