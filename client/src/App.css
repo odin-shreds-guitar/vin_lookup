@@ -67,3 +67,15 @@ h2{
 #list-table td{
   vertical-align:middle;
 }
+
+#nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#nav span{
+  margin-top: 10px;
+  width: 10%;
+  font-weight: bolder;
+}

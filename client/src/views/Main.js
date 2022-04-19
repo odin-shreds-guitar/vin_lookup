@@ -12,19 +12,23 @@ const Main = () => {
 
 	// initial check to confirm the .gov api is up 
 	const checkVPIC = () => {
-		console.log("Gov API is up")
 		axios.get('https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValuesExtended/12345678901234567/?format=json')
 			.then( response =>{
 				if (response.status != 200){
+					// actual response error
 					setErrors("There was a problem establishing connection to the API")
 						} 
+				else {
+					setErrors("")
+				}
 					}
 			)
 			.catch(
+				// call to the api fails altogether
 				err => {
 					console.log( err )
 					if (err.message){
-						setErrors(err.message);
+						setErrors("There was a problem establishing connection to the API");
 					} 
 				})
 			}
