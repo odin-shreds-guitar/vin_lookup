@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vin_lookup/static/css/main.cf63ef64.css",
-    "main.js": "/vin_lookup/static/js/main.948d0164.js",
+    "main.js": "/vin_lookup/static/js/main.707638e4.js",
     "static/js/787.c4e7f8f9.chunk.js": "/vin_lookup/static/js/787.c4e7f8f9.chunk.js",
     "index.html": "/vin_lookup/index.html",
     "main.cf63ef64.css.map": "/vin_lookup/static/css/main.cf63ef64.css.map",
-    "main.948d0164.js.map": "/vin_lookup/static/js/main.948d0164.js.map",
+    "main.707638e4.js.map": "/vin_lookup/static/js/main.707638e4.js.map",
     "787.c4e7f8f9.chunk.js.map": "/vin_lookup/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf63ef64.css",
-    "static/js/main.948d0164.js"
+    "static/js/main.707638e4.js"
   ]
 }
